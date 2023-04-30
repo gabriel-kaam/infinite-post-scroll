@@ -129,7 +129,7 @@ function infinite_post_scroll_get_previus_post( $post_object ) {
  * @return string The post rendered in HTML.
  */
 function infinite_post_scroll_get_rendered_post( $post_id ) {
-	$title        = get_the_title( $post_id ), true, $post_id;
+	$title        = get_the_title( $post_id );
 	$entry_meta   = ''; // Add a function here that renders the post meta.
 	$content      = wpautop( get_the_content( null, false, $post_id ) );
 	$url  	 	  = get_permalink( $post_id );
